@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:baseForm="https://soap.api.nav.gov.hu/definitions/model/2.0/baseForm/1.0"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/26RENDNY/2.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/26RENDNY/2.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/baseForm/1.0"
+           schemaLocation="baseForm.xsd"/>
+   <element name="Doc_26RENDNY"
+            type="tns:Doc_26RENDNY_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>RENDELKEZÉS a 2026. évre vonatkozóan a társaságiadó-előleg kedvezményezett célra történő felajánlásáról az 1996. évi LXXXI. törvény 24/A § (1) és (4) bekezdése alapján</documentation>
+      </annotation>
+      <xs:unique name="uniqueFileId_Attachment_1">
+         <xs:selector xpath="Form_26RENDNY/Attachment_1"/>
+         <xs:field xpath="fileId"/>
+      </xs:unique>
+   </element>
+   <complexType name="Doc_26RENDNY_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_26RENDNY"
+                  type="tns:Form_26RENDNY_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>26RENDNY részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_26RENDNY_0A0001E003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H">
+            <annotation>
+               <documentation>H=havi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="N">
+            <annotation>
+               <documentation>N=negyedéves</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26RENDNY_0A0001F001A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="M">
+            <annotation>
+               <documentation>M=Módosítandó</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26RENDNY_0B0001F0131AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1">
+            <annotation>
+               <documentation>1=szponzori szerződés</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="2">
+            <annotation>
+               <documentation>2=támogatási szerződés</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26RENDNY_0B0001C0101AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Magyar Jégkorong Szövetség">
+            <annotation>
+               <documentation>Magyar Jégkorong Szövetség=MJSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Labdarúgó Szövetség">
+            <annotation>
+               <documentation>Magyar Labdarúgó Szövetség=MLSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Kosárlabdázók Országos Szövetsége">
+            <annotation>
+               <documentation>Magyar Kosárlabdázók Országos Szövetsége=MKOSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Vízilabda Szövetség">
+            <annotation>
+               <documentation>Magyar Vízilabda Szövetség=MVLSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Kézilabda Szövetség">
+            <annotation>
+               <documentation>Magyar Kézilabda Szövetség=MKSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Röplabda Szövetség">
+            <annotation>
+               <documentation>Magyar Röplabda Szövetség=MRSZ</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Honvédelmi Minisztérium">
+            <annotation>
+               <documentation>Honvédelmi Minisztérium=HM</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_26RENDNY_0B0001G0160AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1">
+            <annotation>
+               <documentation>1=Tao. tv 22/C. § (1) a)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="2">
+            <annotation>
+               <documentation>2=Tao. tv 22/C. § (1) b)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="3">
+            <annotation>
+               <documentation>3=Tao. tv 22/C. § (1) c)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="4">
+            <annotation>
+               <documentation>4=Tao. tv 22/C. § (1) d)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="5">
+            <annotation>
+               <documentation>5=Tao. tv 22/C. § (1) e)</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_26RENDNY_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány 26RENDNY részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120003"
+                  type="tns:Block_26RENDNY_120003_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>AZONOSÍTÓ ADATOK</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120055"
+                  type="tns:Block_26RENDNY_120055_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>[RNYIL-01] Rendelkezőnyilatkozat kedvezményezett célra történő adó-felajánlásról (Látványcsapatsport támogatása)</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120002"
+                  type="tns:Block_26RENDNY_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>[RNYIL-02] Rendelkezőnyilatkozat kedvezményezett célra történő adó-felajánlásról (Filmalkotás támogatása)</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120004"
+                  type="tns:Block_26RENDNY_120004_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>[01] Rendelkezés a társaságiadó-előlegekről illetve azok módosításáról</documentation>
+            </annotation>
+         </element>
+         <element name="Attachment_1"
+                  type="baseForm:AttachmentType"
+                  minOccurs="0"
+                  maxOccurs="1"
+                  meta:metaType="AttachmentMetaType">
+            <annotation>
+               <documentation>Adatbejelentő laphoz csatolható okirat; File Extensions:PDF;TIF</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_26RENDNY_120003_Type">
+      <annotation>
+         <documentation>AZONOSÍTÓ ADATOK</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120015"
+                  type="tns:FieldGroup_26RENDNY_120015_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adózó adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120060"
+                  type="tns:FieldGroup_26RENDNY_120060_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120017"
+                  type="tns:FieldGroup_26RENDNY_120017_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bevallás jellemzői</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26RENDNY_120055_Type">
+      <annotation>
+         <documentation>[RNYIL-01] Rendelkezőnyilatkozat kedvezményezett célra történő adó-felajánlásról (Látványcsapatsport támogatása)</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120057"
+                  type="tns:FieldGroup_26RENDNY_120057_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>C) Igazolás adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120011"
+                  type="tns:FieldGroup_26RENDNY_120011_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>D) Adó-felajánlás</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120012"
+                  type="tns:FieldGroup_26RENDNY_120012_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>E) Kedvezményezett célra felajánlott összeg forintban</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120013"
+                  type="tns:FieldGroup_26RENDNY_120013_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>F) Utalásra vonatkozó tájékoztató adatok a látványcsapatsport támogatása esetén</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120132"
+                  type="tns:Chain_26RENDNY_120132_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>G) Jogcímek [F) mezőcsoport 130. sor kibontása]</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26RENDNY_120002_Type">
+      <annotation>
+         <documentation>[RNYIL-02] Rendelkezőnyilatkozat kedvezményezett célra történő adó-felajánlásról (Filmalkotás támogatása)</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120058"
+                  type="tns:FieldGroup_26RENDNY_120058_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>H) Igazolás adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120008"
+                  type="tns:FieldGroup_26RENDNY_120008_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>I) Adó-felajánlás</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120009"
+                  type="tns:FieldGroup_26RENDNY_120009_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>J) Kedvezményezett célra felajánlott összeg forintban</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_26RENDNY_120004_Type">
+      <annotation>
+         <documentation>[01] Rendelkezés a társaságiadó-előlegekről illetve azok módosításáról</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120005"
+                  type="tns:FieldGroup_26RENDNY_120005_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>B) Rendelkezés a negyedéves társaságiadó-előlegről (Az adatok forintban)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120006"
+                  type="tns:FieldGroup_26RENDNY_120006_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>C) Rendelkezés a havi társaságiadó-előlegről (Az adatok forintban)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_26RENDNY_120132_Type">
+      <annotation>
+         <documentation>G) Jogcímek [F) mezőcsoport 130. sor kibontása]</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_header" minOccurs="0">
+            <annotation>
+               <documentation>Lánc nem ismétlődő elemei (felületen előtte vagy utána jelennek meg)</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120047"
+                           type="tns:FieldGroup_26RENDNY_120047_Type"
+                           minOccurs="0"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>G) 160.</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="6">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120086"
+                           type="tns:FieldGroup_26RENDNY_120086_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>G) Jogcímek [F) mezőcsoport 130. sor kibontása]</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120015_Type">
+      <annotation>
+         <documentation>Adózó adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma / csoportazonosító száma (adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózó neve (adózó_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120060_Type">
+      <annotation>
+         <documentation>Ügyintéző adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve (ügyintéző_név)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telefonszáma (ügyintéző_tel)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120017_Type">
+      <annotation>
+         <documentation>Bevallás jellemzői</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001F001A"
+                  minOccurs="0"
+                  type="tns:Enum_26RENDNY_0A0001F001A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vonalkód ¦ Korábbi rendelkezésemet módosítani kívánom (Bev_mód)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vonalkód ¦ Módosítandó nyilatkozat vonalkódja (mód_vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vonalkód ¦ Hibásnak minősített rendelkezés vonalkódja (vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E003A"
+                  minOccurs="0"
+                  type="tns:Enum_26RENDNY_0A0001E003A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Felajánlással érintett időszakra vonatkozó adatok ¦ Előlegfizetés gyakorisága (bev_gyakoriság)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F002A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Felajánlással érintett időszakra vonatkozó adatok ¦ Eltérő üzleti év kódkockája (ELTÉRŐ)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Felajánlással érintett időszakra vonatkozó adatok ¦ Mérlegfordulónap (hó, nap) (mérleg)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E001A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Felajánlással érintett időszak ¦ Kezdete (bev_időszak_kezdete)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Felajánlással érintett időszak ¦ Vége (bev_időszak_vége)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001A002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Benyújtás dátuma (Amainap)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001G001A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Rendelkezőnyilatkozatomat az alábbi kedvezményezett cél, célok támogatása érdekében kívánom megtenni: ¦ Látványcsapatsport 22/C.§ (1) bekezdés szerinti támogatása érdekében (főlap_sport)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001G002A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Rendelkezőnyilatkozatomat az alábbi kedvezményezett cél, célok támogatása érdekében kívánom megtenni: ¦ Filmalkotás 22.§ (2) bekezdése szerinti támogatása érdekében (főlap_film)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ Kitöltött menüpontok száma ¦ [RNYIL-01] (lapRNY1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ Kitöltött menüpontok száma ¦ [RNYIL-02] (lapRNY2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ Kitöltött menüpontok száma ¦ [01] (lap01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120057_Type">
+      <annotation>
+         <documentation>C) Igazolás adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001C0101AA"
+                  minOccurs="0"
+                  type="tns:Enum_26RENDNY_0B0001C0101AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>101. Igazolást kiállító szervezet neve ([RNYIL_01]A101)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0B0001C0102AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>102. Igazolásban szereplő teljes összeg (Ft) ([RNYIL_01]A102)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001C0103AA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>103. Igazolás kelte ([RNYIL_01]A103)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0B0001C0104AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>104. Igazolás azonosítója ([RNYIL_01]A104)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001C0105AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 105. Igazolást kiállító szervezet adószáma ([RNYIL_01]A105)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120011_Type">
+      <annotation>
+         <documentation>D) Adó-felajánlás</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001D0110AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>110. Kedvezményezett szervezet neve ([RNYIL_01]A110)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001D0111AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>111. Kedvezményezett szervezet adószáma ([RNYIL_01]A111)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001D50000A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>112. A kedvezményezett szervezet sportakadémia ([RNYIL_01]A112)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120012_Type">
+      <annotation>
+         <documentation>E) Kedvezményezett célra felajánlott összeg forintban</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001E0115AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>115. Látványcsapatsport támogatása [Tao. tv. 24/A. § (3) b)] ([RNYIL_01]A115)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120013_Type">
+      <annotation>
+         <documentation>F) Utalásra vonatkozó tájékoztató adatok a látványcsapatsport támogatása esetén</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001F0130AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 130. Kedvezményezett célra történő felajánlás összege (115. sor 87,5%-a) (Ft) ([RNYIL_01]A130)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0131AA"
+                  minOccurs="0"
+                  type="tns:Enum_26RENDNY_0B0001F0131AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>131. Kérjük jelölje, mely szervezet részére történjen a kiegészítő sportfejlesztési támogatás utalása ( 12,5% ) (Kérjük, jelölje "1"-gyel, ha szponzori, "2"-vel, ha támogatási szerződése van) ([RNYIL_01]A131)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0B0001F0132AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>132. Kiegészítő sportfejlesztési támogatásra jogosult neve ([RNYIL_01]A132)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0133AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 133. Kiegészítő sportfejlesztési támogatás összege (Ft) ([RNYIL_01]A133)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0134AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>134. Kiegészítő sportfejlesztési támogatásra jogosult adószáma ([RNYIL_01]A134)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0135AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>135. Kiegészítő sportfejlesztési támogatás jogosultjának önálló fizetési számlaszáma ([RNYIL_01]A135)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0140AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 140. A MOB vagy sportakadémia támogatása esetén a Tao. tv. 24/A. § (25) szerint átutalandó összeg 1 %-a (Ft) ([RNYIL_01]A140)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0141AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 141. A Tao. tv. 24/A. § (25) szerinti 1%-nak a sportpolitikáért felelős miniszter által vezetett minisztérium részére utalandó 1/3-ad része (Ft) ([RNYIL_01]A141)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0142AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 142. A Tao. tv. 24/A. § (25) szerinti 1%-nak az érintett országos sportági szakszövetség részére utalandó 2/3-ad része (Ft) ([RNYIL_01]A142)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0143AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 143. Sportági szakszövetség neve ([RNYIL_01]A143)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0144AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 144. Sportági szakszövetség adószáma ([RNYIL_01]A144)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0145AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>145. Sportági szakszövetség önálló fizetési számlaszáma ([RNYIL_01]A145)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001F0150AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 150. Összesen ( 133. + [140. vagy 141. + 142.] sorok + [170 + ... + 175] sorok (b) rovata ) (Ft) ([RNYIL_01]A150)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120058_Type">
+      <annotation>
+         <documentation>H) Igazolás adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001C0201AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>201. Igazolást kiállító szervezet neve ([RNYIL_02]A201)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0202AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>202. Igazolásban szereplő teljes összeg (Ft) ([RNYIL_02]A202)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0203AA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>203. Igazolás kelte ([RNYIL_02]A203)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0C0001C0204AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>204. Igazolás azonosítója ([RNYIL_02]A204)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0205AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>205. Igazolást kiállító szervezet adószáma ([RNYIL_02]A205)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120008_Type">
+      <annotation>
+         <documentation>I) Adó-felajánlás</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001D0210AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>210. Kedvezményezett szervezet neve ([RNYIL_02]A210)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D0211AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>211. Kedvezményezett szervezet adószáma ([RNYIL_02]A211)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D0212AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>212. Kedvezményezett szervezet számlaszáma ([RNYIL_02]A212)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120009_Type">
+      <annotation>
+         <documentation>J) Kedvezményezett célra felajánlott összeg forintban</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001E0215AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>215. Filmalkotás támogatása [Tao. tv. 24/A. § (3) a)] ([RNYIL_02]A215)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120005_Type">
+      <annotation>
+         <documentation>B) Rendelkezés a negyedéves társaságiadó-előlegről (Az adatok forintban)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0D0001C0004AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 04. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (5 +...+ 8. sorok összesen) ¦ 2026. évi előírt (a) ([01]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0004BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 04. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (5 +...+ 8. sorok összesen) ¦ Rendelkezőnyilatkozat összege (b) ([01]B4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0004CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 04. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (5 +...+ 8. sorok összesen) ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0005AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 05. Tárgyidőszak: I. üzleti negyedév ¦ 2026. évi előírt (a) ([01]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0005BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 05. Tárgyidőszak: I. üzleti negyedév ¦ Rendelkezőnyilatkozat összege (b) ([01]B5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0005CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 05. Tárgyidőszak: I. üzleti negyedév ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0006AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 06. Tárgyidőszak: II. üzleti negyedév ¦ 2026. évi előírt (a) ([01]A6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0006BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 06. Tárgyidőszak: II. üzleti negyedév ¦ Rendelkezőnyilatkozat összege (b) ([01]B6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0006CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 06. Tárgyidőszak: II. üzleti negyedév ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0007AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 07. Tárgyidőszak: III. üzleti negyedév ¦ 2026. évi előírt (a) ([01]A7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0007BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 07. Tárgyidőszak: III. üzleti negyedév ¦ Rendelkezőnyilatkozat összege (b) ([01]B7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0007CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 07. Tárgyidőszak: III. üzleti negyedév ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0008AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 08. Tárgyidőszak: IV. üzleti negyedév ¦ 2026. évi előírt (a) ([01]A8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0008BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 08. Tárgyidőszak: IV. üzleti negyedév ¦ Rendelkezőnyilatkozat összege (b) ([01]B8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0008CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tárgyidőszaki adóelőlegek és rendelkezések összege ¦ 08. Tárgyidőszak: IV. üzleti negyedév ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120006_Type">
+      <annotation>
+         <documentation>C) Rendelkezés a havi társaságiadó-előlegről (Az adatok forintban)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0D0001D0009AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 09. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (10 +...+ 33. sorok összesen) ¦ Előírt adóelőleg összege (a) ([01]A9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0009BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 09. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (10 +...+ 33. sorok összesen) ¦ Rendelkezőnyilatkozat összege (b) ([01]B9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0009CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ 09. Tárgyidőszaki adóelőlegek és rendelkezőnyilatkozatok összege (10 +...+ 33. sorok összesen) ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0010AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 10. Tárgyidőszak: 2026. január ¦ Előírt adóelőleg összege (a) ([01]A10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0010BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 10. Tárgyidőszak: 2026. január ¦ Rendelkezőnyilatkozat összege (b) ([01]B10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0010CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 10. Tárgyidőszak: 2026. január ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0011AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 11. Tárgyidőszak: 2026. február ¦ Előírt adóelőleg összege (a) ([01]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0011BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 11. Tárgyidőszak: 2026. február ¦ Rendelkezőnyilatkozat összege (b) ([01]B11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0011CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 11. Tárgyidőszak: 2026. február ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0012AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 12. Tárgyidőszak: 2026. március ¦ Előírt adóelőleg összege (a) ([01]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0012BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 12. Tárgyidőszak: 2026. március ¦ Rendelkezőnyilatkozat összege (b) ([01]B12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0012CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 12. Tárgyidőszak: 2026. március ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0013AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 13. Tárgyidőszak: 2026. április ¦ Előírt adóelőleg összege (a) ([01]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0013BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 13. Tárgyidőszak: 2026. április ¦ Rendelkezőnyilatkozat összege (b) ([01]B13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0013CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 13. Tárgyidőszak: 2026. április ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0014AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 14. Tárgyidőszak: 2026. május ¦ Előírt adóelőleg összege (a) ([01]A14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0014BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 14. Tárgyidőszak: 2026. május ¦ Rendelkezőnyilatkozat összege (b) ([01]B14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0014CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 14. Tárgyidőszak: 2026. május ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0015AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 15. Tárgyidőszak: 2026. június ¦ Előírt adóelőleg összege (a) ([01]A15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0015BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 15. Tárgyidőszak: 2026. június ¦ Rendelkezőnyilatkozat összege (b) ([01]B15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0015CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 15. Tárgyidőszak: 2026. június ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0016AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 16. Tárgyidőszak: 2026. július ¦ Előírt adóelőleg összege (a) ([01]A16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0016BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 16. Tárgyidőszak: 2026. július ¦ Rendelkezőnyilatkozat összege (b) ([01]B16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0016CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 16. Tárgyidőszak: 2026. július ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0017AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 17. Tárgyidőszak: 2026. augusztus ¦ Előírt adóelőleg összege (a) ([01]A17)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0017BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 17. Tárgyidőszak: 2026. augusztus ¦ Rendelkezőnyilatkozat összege (b) ([01]B17)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0017CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 17. Tárgyidőszak: 2026. augusztus ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C17)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0018AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 18. Tárgyidőszak: 2026. szeptember ¦ Előírt adóelőleg összege (a) ([01]A18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0018BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 18. Tárgyidőszak: 2026. szeptember ¦ Rendelkezőnyilatkozat összege (b) ([01]B18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0018CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 18. Tárgyidőszak: 2026. szeptember ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0019AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 19. Tárgyidőszak: 2026. október ¦ Előírt adóelőleg összege (a) ([01]A19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0019BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 19. Tárgyidőszak: 2026. október ¦ Rendelkezőnyilatkozat összege (b) ([01]B19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0019CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 19. Tárgyidőszak: 2026. október ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0020AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 20. Tárgyidőszak: 2026. november ¦ Előírt adóelőleg összege (a) ([01]A20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0020BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 20. Tárgyidőszak: 2026. november ¦ Rendelkezőnyilatkozat összege (b) ([01]B20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0020CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 20. Tárgyidőszak: 2026. november ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0021AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 21. Tárgyidőszak: 2026. december ¦ Előírt adóelőleg összege (a) ([01]A21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0021BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 21. Tárgyidőszak: 2026. december ¦ Rendelkezőnyilatkozat összege (b) ([01]B21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0021CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2026. évi adóelőlegek és rendelkezések összege ¦ 21. Tárgyidőszak: 2026. december ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0022AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 22. Tárgyidőszak: 2027. január ¦ Előírt adóelőleg összege (a) ([01]A22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0022BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 22. Tárgyidőszak: 2027. január ¦ Rendelkezőnyilatkozat összege (b) ([01]B22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0022CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 22. Tárgyidőszak: 2027. január ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0023AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 23. Tárgyidőszak: 2027. február ¦ Előírt adóelőleg összege (a) ([01]A23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0023BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 23. Tárgyidőszak: 2027. február ¦ Rendelkezőnyilatkozat összege (b) ([01]B23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0023CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 23. Tárgyidőszak: 2027. február ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0024AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 24. Tárgyidőszak: 2027. március ¦ Előírt adóelőleg összege (a) ([01]A24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0024BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 24. Tárgyidőszak: 2027. március ¦ Rendelkezőnyilatkozat összege (b) ([01]B24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0024CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 24. Tárgyidőszak: 2027. március ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0025AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 25. Tárgyidőszak: 2027. április ¦ Előírt adóelőleg összege (a) ([01]A25)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0025BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 25. Tárgyidőszak: 2027. április ¦ Rendelkezőnyilatkozat összege (b) ([01]B25)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0025CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 25. Tárgyidőszak: 2027. április ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C25)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0026AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 26. Tárgyidőszak: 2027. május ¦ Előírt adóelőleg összege (a) ([01]A26)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0026BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 26. Tárgyidőszak: 2027. május ¦ Rendelkezőnyilatkozat összege (b) ([01]B26)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0026CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 26. Tárgyidőszak: 2027. május ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C26)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0027AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 27. Tárgyidőszak: 2027. június ¦ Előírt adóelőleg összege (a) ([01]A27)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0027BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 27. Tárgyidőszak: 2027. június ¦ Rendelkezőnyilatkozat összege (b) ([01]B27)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0027CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 27. Tárgyidőszak: 2027. június ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C27)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0028AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 28. Tárgyidőszak: 2027. július ¦ Előírt adóelőleg összege (a) ([01]A28)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0028BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 28. Tárgyidőszak: 2027. július ¦ Rendelkezőnyilatkozat összege (b) ([01]B28)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0028CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 28. Tárgyidőszak: 2027. július ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C28)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0029AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 29. Tárgyidőszak: 2027. augusztus ¦ Előírt adóelőleg összege (a) ([01]A29)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0029BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 29. Tárgyidőszak: 2027. augusztus ¦ Rendelkezőnyilatkozat összege (b) ([01]B29)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0029CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 29. Tárgyidőszak: 2027. augusztus ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C29)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0030AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 30. Tárgyidőszak: 2027. szeptember ¦ Előírt adóelőleg összege (a) ([01]A30)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0030BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 30. Tárgyidőszak: 2027. szeptember ¦ Rendelkezőnyilatkozat összege (b) ([01]B30)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0030CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 30. Tárgyidőszak: 2027. szeptember ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C30)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0031AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 31. Tárgyidőszak: 2027. október ¦ Előírt adóelőleg összege (a) ([01]A31)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0031BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 31. Tárgyidőszak: 2027. október ¦ Rendelkezőnyilatkozat összege (b) ([01]B31)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0031CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 31. Tárgyidőszak: 2027. október ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C31)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0032AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 32. Tárgyidőszak: 2027. november ¦ Előírt adóelőleg összege (a) ([01]A32)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0032BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 32. Tárgyidőszak: 2027. november ¦ Rendelkezőnyilatkozat összege (b) ([01]B32)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0032CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 32. Tárgyidőszak: 2027. november ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C32)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0033AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 33. Tárgyidőszak: 2027. december ¦ Előírt adóelőleg összege (a) ([01]A33)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0033BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 33. Tárgyidőszak: 2027. december ¦ Rendelkezőnyilatkozat összege (b) ([01]B33)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001D0033CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>2027. évi adóelőlegek és rendelkezések összege ¦ 33. Tárgyidőszak: 2027. december ¦ Rendelkezőnyilatkozat módosítás (c) ([01]C33)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120086_Type">
+      <annotation>
+         <documentation>G) Jogcímek [F) mezőcsoport 130. sor kibontása]</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001G0170AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Alpont (a) ([RNYIL_01]A170)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001G0170BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Az adatok forintban (b) ([RNYIL_01]B170)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001G0170CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bankszámlaszám (c) ([RNYIL_01]C170)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_26RENDNY_120047_Type">
+      <annotation>
+         <documentation>G) 160.</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001G0160AA"
+                  minOccurs="0"
+                  type="tns:Enum_26RENDNY_0B0001G0160AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>160. 1=Tao. tv 22/C. § (1) a), 2=Tao. tv 22/C. § (1) b), 3=Tao. tv 22/C. § (1) c), 4=Tao. tv 22/C. § (1) d), 5=Tao. tv 22/C. § (1) e) ([RNYIL_01]A160)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+</schema>
